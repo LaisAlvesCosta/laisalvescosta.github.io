@@ -2,7 +2,7 @@
 categories:
 - Dev
 - Kernel_Dev
-date: 2026-03-04
+date: 2026-03-11
 tags:
 - kernel
 - MAC5856
@@ -10,7 +10,7 @@ title: Tutorial 2 Building and booting a custom Linux kernel for ARM
   using kw
 ---
 
-(available at <https://flusp.ime.usp.br/kernel/qemu-libvirt-setup/>)
+(available at <https://flusp.ime.usp.br/kernel/build-linux-for-arm-kw/>)
 
 As a beginner, I felt more confident starting this tutorial because I
 was already somewhat familiar with the environment and with some of the
