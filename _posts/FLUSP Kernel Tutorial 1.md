@@ -1,13 +1,8 @@
 ---
-categories:
-- Dev
-- Kernel_Dev
+categories: [Dev, Kernel_Dev]
 date: 2026-03-04
-tags:
-- kernel
-- MAC5856
-title: Tutorial 1 Setting up a test environment for Linux Kernel Dev
-  using QEMU and libvirt
+tags: [kernel, mac5856] # TAG names should always be lowercase
+title: Tutorial 1 Setting up a test environment for Linux Kernel Dev using QEMU and libvirt
 ---
 
 (available at <https://flusp.ime.usp.br/kernel/qemu-libvirt-setup/>)

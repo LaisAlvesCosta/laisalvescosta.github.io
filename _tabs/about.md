@@ -3,7 +3,6 @@
 icon: fas fa-info-circle
 order: 4
 ---
-# About
 
 Hello! My name is **Laís Alves da Costa**.
 
@@ -24,4 +23,6 @@ This blog was created to share:
 - technical tutorials and problem-solving guides;
 - reflections on education, research, and academic life.
 
-The idea is to use this space as a public learning notebook, where I document discoveries, challenges, and solutions throughout my journey in research and technology. If you would like to talk, exchange ideas, or collaborate, feel free to get in touch.
+The idea is to use this space as a public learning notebook, where I document discoveries, challenges, and solutions throughout my journey in research and technology. 
+
+If you would like to talk, exchange ideas, or collaborate, feel free to get in touch.
