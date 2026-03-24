@@ -38,7 +38,46 @@ up spending quite some time on this step because I had to reinstall and
 redo the installation process several times before understanding what
 was happening.
 
-In step 4, the tutorial shows how to check some information about the
+During step 4 of the tutorial, when attempting to fetch the module list from the virtual machine using:
+
+```bash
+$KW_DIR/kw ssh --get '~/vm_mod_list'
+```
+I encountered the following error:
+
+```bash
+(LK-DEV) root@gauss:/home/lk_dev/iio# $KW_DIR/kw ssh --get '~/vm_mod_list'
+=========================================================
+[INFO]: Running kw using repository executable.
+
+KW environment variables are set to the following:
+
+    KW_CACHE_DIR=/root/.cache/kw
+    KW_DATA_DIR=/root/.local/share/kw
+    KW_DB_DIR=/home/lk_dev/kw/database
+    KW_DOC_DIR=/home/lk_dev/kw/documentation
+    KW_ETC_DIR=/home/lk_dev/kw/etc
+    KW_LIB_DIR=/home/lk_dev/kw/src
+    KW_MAN_DIR=/home/lk_dev/kw/documentation/man
+    KW_PLUGINS_DIR=/home/lk_dev/kw/src/plugins
+    KW_SRC_LIB_DIR=/home/lk_dev/kw/src/lib
+    KW_SOUND_DIR=/home/lk_dev/kw/sound
+
+=========================================================
+bash: line 1: rsync: command not found
+rsync: connection unexpectedly closed (0 bytes received so far) [Receiver]
+rsync error: error in rsync protocol data stream (code 12) at io.c(232) [Receiver=3.2.7]
+An error occurred while uploading the file(s). rsync return code: 12
+```
+This happens because `kw ssh --get` relies on `rsync` over SSH to transfer files from the virtual machine to the host. Since rsync was not installed on the VM, the command failed. To fix this issue, I installed rsync inside the virtual machine:
+
+``` bash
+apt update
+apt install rsync -y
+```
+After installing `rsync`, the command worked correctly and I was able to proceed with generating the optimized kernel configuration.
+
+Moreover, in step 4, the tutorial shows how to check some information about the
 kernel compilation, including how many modules will be compiled, using:
 
 ``` bash
@@ -95,7 +134,7 @@ The expected result should have a format similar to:
 
 ``` bash
 root@localhost:~# uname --kernel-release
-7.0.0-rc1VM laistar+
+7.0.0-rc1VM-laistar+
 ```
 
 This confirms that the VM is running the kernel that was compiled during
