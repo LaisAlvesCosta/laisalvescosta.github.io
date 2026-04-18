@@ -2,7 +2,7 @@
 categories: [Dev, Kernel_Dev]
 date: 2026-04-01
 tags: [kernel, mac5856]
-title: Tutorial 8 IIO Dummy module Experiment One: Play with iio_dummy
+title: Tutorial 8 IIO Dummy module Experiment One - Play with iio_dummy
 ---
 
 (available at <https://flusp.ime.usp.br/iio/experiment-one-iio-dummy/>)
