@@ -27,7 +27,7 @@ To resolve this duplication, our goal was to create a **helper function** in a c
   
 Below is the diff of our implementation:
 
-```bash
+```c
 
 --
  drivers/gpu/drm/amd/amdgpu/amdgpu_gfx.c | 55 +++++++++++++++++++++++++

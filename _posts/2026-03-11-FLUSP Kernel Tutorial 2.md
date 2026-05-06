@@ -38,12 +38,7 @@ up spending quite some time on this step because I had to reinstall and
 redo the installation process several times before understanding what
 was happening.
 
-During step 4 of the tutorial, when attempting to fetch the module list from the virtual machine using:
-
-```bash
-$KW_DIR/kw ssh --get '~/vm_mod_list'
-```
-I encountered the following error:
+During step 4 of the tutorial, when attempting to fetch the module list from the virtual machine, I encountered the following error:
 
 ```bash
 (LK-DEV) root@gauss:/home/lk_dev/iio# $KW_DIR/kw ssh --get '~/vm_mod_list'
