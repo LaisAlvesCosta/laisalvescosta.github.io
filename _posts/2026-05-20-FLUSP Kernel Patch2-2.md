@@ -2,7 +2,7 @@
 categories: [Dev, Kernel_Dev]
 date: 2026-06-03
 tags: [kernel, mac5856]
-title: Linux Kernel Patch 2-1 Kworkflow
+title: Linux Kernel Patch 2-2 Kworkflow
 ---
 
 ## Contribuição na Issue #573
