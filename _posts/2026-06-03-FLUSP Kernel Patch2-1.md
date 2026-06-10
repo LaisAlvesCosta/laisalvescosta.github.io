@@ -39,6 +39,8 @@ A primeira issue investigada foi:
 
 **"Test for tests/vm_test.sh uses user configuration data"**
 
+Disponível em: <https://github.com/kworkflow/kworkflow/issues/305>
+
 Segundo o relato original:
 
 > Testing the vm module of kw (./run_tests.sh test vm_test) will use the installed configuration, leading to undefined behavior.
