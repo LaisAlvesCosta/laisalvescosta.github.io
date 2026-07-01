@@ -32,7 +32,7 @@ A recomendação do mantenedor Christian König foi implementada em todas as ins
 Como era o trecho original da função:
 
 
-```c
+```bash
 DRM_DEBUG("IH: CP EOP\n");
 
     if (adev->enable_mes && doorbell_offset) {
@@ -51,7 +51,7 @@ DRM_DEBUG("IH: CP EOP\n");
 
 E como ficou com a nossa contribuição:
 
-```c
+```bash
 DRM_DEBUG("IH: CP EOP\n");
 
     if (adev->enable_mes && doorbell_offset) {
@@ -60,7 +60,7 @@ DRM_DEBUG("IH: CP EOP\n");
 ```
 Assim ficou instanciada a função `amdgpu_userq_find_by_doorbell()` no helper `amdgpu_gfx.c`:
 
-```c
+```bash
 static void amdgpu_userq_find_by_doorbell(struct amdgpu_device *adev,
                  u32 doorbell_offset)
 {
